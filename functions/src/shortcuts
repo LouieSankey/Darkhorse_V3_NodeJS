@@ -1,0 +1,26 @@
+my own notes and shortcuts for local development with
+firebase emulator, sublime text, and terminal
+
+edit keybinds - Preferences: Terminus Key Bindings
+
+new firebase project (from empty folder)
+firebase init functions
+
+kill emulator instance = 
+sudo lsof -i :5000 
+kill PID
+
+NPM START 
+(initializes local gcloud functions environment (run from inside 'dhcloud/functions'))
+
+deploy 1 function 
+firebase deploy --only functions:
+
+firebase use dark-horse-1537b - for production
+firebase use darkhorse-tests - for tests
+
+send request to function: functionName()
+
+
+firebase emulators:start --inspect-functions
+

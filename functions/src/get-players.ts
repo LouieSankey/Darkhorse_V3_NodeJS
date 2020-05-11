@@ -77,7 +77,7 @@ exports.handler = function(req, res, database){
 
     function writePlayers(allPlayers){
     allPlayers.forEach(player => {
-		console.log("wrote player 1")
+
         nbaDraftRef.doc(player.playerDBRef)
             .set(player)
             .catch(error => 

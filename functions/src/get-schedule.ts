@@ -39,8 +39,6 @@ exports.handler = function(req, res, database){
 
                 $('tbody').children('tr').each((i, element) => {
 
-                    console.log($(element).children('td').eq(1).find('a').attr('href'));
-
                     const params = {
                         html: $(element),
                         database: database,

@@ -19,7 +19,7 @@ exports.handler = function(req, res, database){
     .then(getSchedules)
     .then(readPlayers)
     .then(writePlayers)
-	.catch(err => console.log("error writing schedule: " + err));
+	.catch(err => console.log("error writing players: " + err));
 	
 	function deletePlayers(playerSnapshot){
 		playerSnapshot.docs.forEach((doc) => {

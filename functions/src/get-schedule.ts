@@ -14,6 +14,7 @@ exports.handler = function(req, res, database){
         .then(deleteSchedule)
         .then(readSchedule)
         .then(writeSchedule)
+        .catch(err => console.log("error writing schedule: " + err));
        
         function deleteSchedule(scheduleSnapshot){
                 scheduleSnapshot.docs.forEach((doc) => {

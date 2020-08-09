@@ -1,20 +1,18 @@
 This is a sample of the Node.js webscrapper that powers my fantasy sports game, Darkhorse.
 
-It consists of 3  Firebase Cloud Functions:
+It consists of 3  Firebase Cloud Functions: one for getting the currently schedule NBA games from cbssports.com,
+another for using the schedule to then get the active players, and then another for getting the player's logs. 
 
-First, getSchedule makes a request to CBS sports and scrapes schedule data for upcoming NBA games.
-It then writes the data to my Firebase database. 
+My full codebase for the app includes around 25 'cloud functions' deployed to google cloud, as well as a robust Firestore databse
+and a native iOS cient app. 
 
-Second, getPlayers reads the schedule data from Firebase and makes a new http request to the 
-TEAM page of every team with upcoming game. This results in only getting info for players with upcoming games.
+This sample code shows my clean handling of making multiple nested https requests with promises, promis.all(). async/await, 
+and the javascript map and reduce functions. 
 
-Third, for every player with an upcoming game, I make an additional request to that player's 
-individual page to get the player's photo url, and previous game logs. 
 
-My full codebase for the app includes around 20-25 cloud functions, with various tasks like managing contests,
-importing real time stats, and calculating scores. 
 
-This is only a sample to show my use of Node.js, promise chaining, async await, promise.map,
-and some third party libraries like request-promise, moment.js, and cheerio (for webcrawling).
+
+
+
 
 

@@ -5,7 +5,7 @@ schedule NBA games from cbssports.com, another for using the schedule to get the
 another for getting additional player logs and info. 
 
 My full codebase for the app includes around 25 functions deployed to Google Cloud Platform, as well as a 
-robust Firestore databse and a native iOS cient app, which you can play durring the NBA season at www.darkhorse-dfs.app. 
+robust Firestore databse and a native iOS cient app, which you can play durring the NBA season at https://www.darkhorse-dfs.app. 
 (Download through testflight)
 
 This sample code shows my clean handling of making multiple nested https requests with promises, 

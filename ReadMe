@@ -1,12 +1,11 @@
+#Darkhorse https://www.darkhorse-dfs.app
+
 This is a sample of the Node.js webscrapper that powers my fantasy sports game, Darkhorse.
 
-It consists of 3 Google Cloud Functions which import data into a Firebase DB: one for getting the currently 
-schedule NBA games from cbssports.com, another for using the schedule to get the active players, and then 
-another for getting additional player logs and info. 
+It consists of 3 Google Cloud Functions which import data into a Firebase DB: one for getting the currently schedule NBA games from cbssports.com, another for using the schedule to get the active players, and then another for getting additional player logs and info. 
 
 My full codebase for the app includes around 25 functions deployed to Google Cloud Platform, as well as a 
-robust Firestore databse and a native iOS cient app, which you can play durring the NBA season at https://www.darkhorse-dfs.app. 
-(available through testflight)
+robust Firestore databse and a native iOS cient app.
 
 This sample code shows my clean handling of making multiple nested https requests with promises, 
 promis.all(). async/await, and the javascript map and reduce functions. 

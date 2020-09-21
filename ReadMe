@@ -8,7 +8,7 @@ My full codebase for the app includes around 25 functions deployed to Google Clo
 robust Firestore databse and a native iOS cient app.
 
 This sample code shows my clean handling of making multiple nested https requests with promises, 
-promis.all(). async/await, and the javascript map and reduce functions. 
+promise.all(). async/await, and the javascript map and reduce functions. 
 
 ![darkhorse](https://user-images.githubusercontent.com/8163492/89725644-6c2f1b80-d9c6-11ea-8f88-4e9abfaf3bcc.png)
 
